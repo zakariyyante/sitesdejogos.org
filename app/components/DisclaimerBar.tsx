@@ -36,8 +36,12 @@ export default function DisclaimerBar() {
 
         {/* Right Section: SRIJ Logo */}
         <div className="shrink-0">
-          <div className="px-6 py-2 border border-white/10 rounded-full bg-white/[0.02] flex items-center gap-4">
-            <div className="relative w-12 h-6">
+          <Link 
+            href="https://www.srij.turismodeportugal.pt/pt" 
+            target="_blank"
+            className="px-6 py-2 border border-white/10 rounded-full bg-white/[0.02] flex items-center gap-4 transition-colors hover:border-primary/40 group"
+          >
+            <div className="relative w-12 h-6 transition-transform group-hover:scale-110">
               <Image src="/srij.svg" alt="SRIJ" fill className="object-contain" />
             </div>
             <div className="w-[1px] h-4 bg-white/10"></div>
@@ -45,7 +49,7 @@ export default function DisclaimerBar() {
               <span className="text-[7px] font-black text-white/30 uppercase tracking-[0.2em] leading-none">Regulado</span>
               <span className="text-[8px] font-black text-white/60 uppercase tracking-[0.3em] mt-1">SRIJ</span>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

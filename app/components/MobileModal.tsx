@@ -77,7 +77,9 @@ export default function MobileModal() {
         <div className="mt-auto p-8 bg-black/80 text-center border-t border-white/10">
           <div className="flex justify-center items-center gap-6 mb-8 opacity-30">
             <Image src="/18+.png" alt="18+" width={24} height={24} className="w-6 h-6 object-contain" />
-            <Image src="/srij.svg" alt="SRIJ" width={48} height={24} className="h-6 w-auto object-contain" />
+            <Link href="https://www.srij.turismodeportugal.pt/pt" target="_blank">
+              <Image src="/srij.svg" alt="SRIJ" width={48} height={24} className="h-6 w-auto object-contain" />
+            </Link>
           </div>
           <p className="mb-4 font-black text-white/40 text-[9px] uppercase tracking-[0.3em]">Atenção: O jogo envolve riscos</p>
           <div className="flex flex-col gap-4 mb-8">

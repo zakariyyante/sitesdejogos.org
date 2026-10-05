@@ -7,7 +7,10 @@ export const metadata: Metadata = {
   title: "Sites de Jogos - Os Melhores Sites de Jogos em Portugal",
   description: "Descubra os melhores sites de jogos online em Portugal. Análises de especialistas e bónus exclusivos.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" }
+    ],
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },

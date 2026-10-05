@@ -50,11 +50,21 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-10 mb-16 grayscale opacity-20 hover:grayscale-0 hover:opacity-100 transition-all duration-700 ease-in-out">
-          <Image src="/srij.svg" alt="SRIJ" width={70} height={35} className="h-7 w-auto object-contain" />
-          <Image src="/18+.png" alt="18+" width={30} height={30} className="h-6 w-auto object-contain" />
-          <Image src="/begambleaware.webp" alt="BeGambleAware" width={100} height={35} className="h-6 w-auto object-contain" />
-          <Image src="/icad.png" alt="ICAD" width={100} height={35} className="h-7 w-auto object-contain" />
-          <Image src="/gordonmoody.png" alt="Gordon Moody" width={90} height={35} className="h-7 w-auto object-contain" />
+          <Link href="https://www.srij.turismodeportugal.pt/pt" target="_blank" className="transition-transform hover:scale-110">
+            <Image src="/srij.svg" alt="SRIJ" width={70} height={35} className="h-7 w-auto object-contain" />
+          </Link>
+          <div className="w-8 h-8 relative grayscale opacity-60">
+            <Image src="/18+.png" alt="18+" width={30} height={30} className="h-6 w-auto object-contain" />
+          </div>
+          <Link href="https://www.gambleaware.org/" target="_blank" className="transition-transform hover:scale-110">
+            <Image src="/begambleaware.webp" alt="BeGambleAware" width={100} height={35} className="h-6 w-auto object-contain" />
+          </Link>
+          <Link href="https://www.icad.pt/" target="_blank" className="transition-transform hover:scale-110">
+            <Image src="/icad.png" alt="ICAD" width={100} height={35} className="h-7 w-auto object-contain" />
+          </Link>
+          <Link href="https://gordonmoody.org.uk/" target="_blank" className="transition-transform hover:scale-110">
+            <Image src="/gordonmoody.png" alt="Gordon Moody" width={90} height={35} className="h-7 w-auto object-contain" />
+          </Link>
         </div>
 
         <div className="text-center text-[9px] text-white/10 uppercase tracking-[0.5em] font-black">
