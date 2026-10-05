@@ -1,0 +1,14 @@
+<svg width="640" height="160" viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Icon -->
+  <path d="M40 20 L80 20 L80 60 C80 90 60 110 60 110 C60 110 40 90 40 60 Z" fill="#f97316" />
+  <path d="M55 45 L65 45 L60 75 Z" fill="white" /> <!-- Lightning bolt motif -->
+  <path d="M60 40 L55 60 L60 55 L65 75 L60 45 Z" fill="white" />
+
+  <!-- Wordmark -->
+  <text x="100" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="white">Platforms</text>
+  <text x="320" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#f97316">Radar</text>
+  <text x="460" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#8b5cf6">FR</text>
+  
+  <!-- Sub-line -->
+  <text x="100" y="110" font-family="Arial, sans-serif" font-size="14" letter-spacing="4" fill="rgba(255,255,255,0.7)" style="text-transform: uppercase;">PLATFORMSRADAR.COM</text>
+</svg>
