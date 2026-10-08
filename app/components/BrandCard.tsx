@@ -79,14 +79,14 @@ export default function BrandCard({ brand, gclid, rank }: BrandCardProps) {
 
       {/* CTA Section */}
       <div className="flex flex-col items-center gap-4 w-full">
-        <button 
+        <div 
           className="w-full py-4 cta-gold rounded-lg shadow-xl text-xs flex items-center justify-center gap-2 group/btn"
         >
           <span>ACEDER À OFERTA</span>
           <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
-        </button>
+        </div>
         <div className="flex items-center gap-2 text-[9px] text-white/20 font-bold uppercase tracking-widest">
           <span className="w-4 h-[1px] bg-white/10"></span>
           <span>Termos e Condições 18+</span>
@@ -96,6 +96,6 @@ export default function BrandCard({ brand, gclid, rank }: BrandCardProps) {
 
       {/* Background Tech Accent */}
       <div className="absolute -bottom-6 -right-6 w-24 h-24 border border-primary/5 rounded-full pointer-events-none group-hover:border-primary/20 transition-all duration-500 group-hover:scale-150"></div>
-    </div>
+    </a>
   );
 }
