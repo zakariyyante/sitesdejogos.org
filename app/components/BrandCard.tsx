@@ -19,26 +19,28 @@ declare global {
 export default function BrandCard({ brand, gclid, rank }: BrandCardProps) {
   const buildUrl = (url: string, gclidValue?: string) => {
     if (!gclidValue) return url;
-    return `${url}${gclidValue}`;
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}gclid=${gclidValue}`;
   };
 
-  const handleCardClick = () => {
-    // Decode the base64 URL only at the moment of interaction
-    const decodedUrl = typeof window !== "undefined" ? window.atob(brand.url) : brand.url;
-    const finalUrl = buildUrl(decodedUrl, gclid);
-    track("Brand Click", { brand: brand.name });
+  const finalUrl = buildUrl(brand.url, gclid);
 
+  const handleClick = (e: React.MouseEvent) => {
+    track("Brand Click", { brand: brand.name });
+    
     if (typeof window !== "undefined" && window.gtag_report_conversion) {
+      e.preventDefault();
       window.gtag_report_conversion(finalUrl);
-    } else {
-      window.open(finalUrl, "_blank");
     }
   };
 
   return (
-    <div 
-      onClick={handleCardClick}
-      className="relative premium-card rounded-2xl p-8 flex flex-col items-center gap-8 cursor-pointer group overflow-hidden"
+    <a 
+      href={finalUrl}
+      onClick={handleClick}
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      className="relative premium-card rounded-2xl p-8 flex flex-col items-center gap-8 cursor-pointer group overflow-hidden block"
     >
       {rank !== undefined && (
         <div className="absolute top-6 left-6 flex items-center gap-2">
