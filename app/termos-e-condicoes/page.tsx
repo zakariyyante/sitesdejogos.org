@@ -16,7 +16,7 @@ export default function TermsPage() {
         <div className="premium-card p-8 md:p-12 rounded-2xl border border-white/5 space-y-8">
           <div className="prose prose-invert max-w-none text-white/50 leading-relaxed space-y-6">
             <p className="text-lg text-white/70 font-medium">
-              Ao aceder ao site sitesdejogos.org, aceita cumprir estes termos. 
+              Ao aceder ao site sitesdejogospt.com, aceita cumprir estes termos. 
               Se não aceitar estes termos, por favor interrompa a utilização do sistema.
             </p>
 
@@ -44,7 +44,7 @@ export default function TermsPage() {
               3. Propriedade
             </h2>
             <p>
-              Todos os logótipos, textos e gráficos do sitesdejogos.org são nossa propriedade. Qualquer reprodução é proibida.
+              Todos os logótipos, textos e gráficos do sitesdejogospt.com são nossa propriedade. Qualquer reprodução é proibida.
             </p>
           </div>
           

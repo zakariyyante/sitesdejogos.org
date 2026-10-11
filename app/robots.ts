@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://sitesdejogos.org/sitemap.xml',
+    sitemap: 'https://sitesdejogospt.com/sitemap.xml',
   };
 }

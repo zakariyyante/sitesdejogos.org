@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <div className="prose prose-invert max-w-none text-white/50 leading-relaxed space-y-6">
             <p className="text-lg text-white/70 font-medium">
               No Sites de Jogos (&quot;nós&quot;, &quot;nosso&quot;), damos grande importância à proteção dos seus dados pessoais. 
-              Esta política detalha como tratamos as suas informações no sitesdejogos.org.
+              Esta política detalha como tratamos as suas informações no sitesdejogospt.com.
             </p>
 
             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"></div>

@@ -29,7 +29,7 @@ export default function ServiceAssistancePage() {
                   Para qualquer pedido de informação, pode contactar-nos por email:
                 </p>
                 <div className="bg-black/40 p-4 rounded border border-primary/20 text-center">
-                  <span className="text-accent font-black tracking-wider text-xs md:text-sm">contact@sitesdejogos.org</span>
+                  <span className="text-accent font-black tracking-wider text-xs md:text-sm">contact@sitesdejogospt.com</span>
                 </div>
                 <p className="text-[10px] mt-4 uppercase tracking-widest text-white/30">
                   Tempo de resposta: 48 horas úteis.
